@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="application/javascript" src="./drag-drop.js"></script>
+    <style>
+        #div1,#div2{
+            width:200px;
+            height:250px;
+            margin: 5px;
+            padding: 5px;
+            border: 1px solid black;
+        }
+        #img{
+            width:200px;
+            height:250px;
+        }
+    </style>
+</head>
+<body>
+<div id="div1" onDrop="drop(event)" ondragover="allowDrop(event)">
+    <img src="star.png" id="img" draggable="true" ondragstart="drag(event)"/>
+</div>
+<div id="div2" onDrop="drop(event)" ondragover="allowDrop(event)"></div>
+</body>
+</html>
